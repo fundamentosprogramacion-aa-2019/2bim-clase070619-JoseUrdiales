@@ -36,9 +36,10 @@ public class Ejemplo3 {
             System.out.println("\nDesea seguir el ciclo, ingrese numero 0");
             seguir = entrada.nextInt();
             entrada.nextLine();
-
+            /* Uso char para seleccionar la posición 0 de la palabra 
+             * que ingrese el usuario.
+             */
             char valor = palabra.charAt(0);
-
             switch (valor) {
                 case 'a':
                 case 'A':
@@ -74,6 +75,7 @@ public class Ejemplo3 {
             reporteFinal = String.format("%sVocal  %s - numero de veces "
                     + "usada: %d\n",reporteFinal, vocales[i], contador[i]);
         }
+        // Declaro el String.format
         System.out.printf("%s\n", reporteFinal);
     }
 }
